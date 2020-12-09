@@ -1,0 +1,27 @@
+This sample demonstrates how data from different GPUs can be exchanged from multiple threads, thanks to unified virtual address space (UVA).
+
+[dmikushin@sm47 pthread_cuda_p2p]$ make
+gcc -g -std=c99 -D_GNU_SOURCE -I/usr/local/cuda/include -I/opt/cuda/include -c pthread_cuda_p2p.c -o pthread_cuda_p2p.o
+nvcc -g -c pattern2d.cu -o pattern2d.o
+nvcc pthread_cuda_p2p.o pattern2d.o -o pthread_cuda_p2p -lpthread
+[dmikushin@sm47 pthread_cuda_p2p]$ ./pthread_cuda_p2p 2 1024 10
+Receiving thread 0 resulting field with average = 1.374491 by thread 1
+Receiving thread 1 resulting field with average = 1.350157 by thread 0
+Receiving thread 0 resulting field with average = 1.350157 by thread 1
+Receiving thread 1 resulting field with average = 1.374491 by thread 0
+Receiving thread 1 resulting field with average = 1.350157 by thread 0
+Receiving thread 0 resulting field with average = 1.374491 by thread 1
+Receiving thread 1 resulting field with average = 1.374491 by thread 0
+Receiving thread 0 resulting field with average = 1.350157 by thread 1
+Receiving thread 1 resulting field with average = 1.350157 by thread 0
+Receiving thread 0 resulting field with average = 1.374491 by thread 1
+Receiving thread 1 resulting field with average = 1.374491 by thread 0
+Receiving thread 0 resulting field with average = 1.350157 by thread 1
+Receiving thread 1 resulting field with average = 1.350157 by thread 0
+Receiving thread 0 resulting field with average = 1.374491 by thread 1
+Receiving thread 1 resulting field with average = 1.374491 by thread 0
+Receiving thread 0 resulting field with average = 1.350157 by thread 1
+Receiving thread 1 resulting field with average = 1.350157 by thread 0
+Receiving thread 0 resulting field with average = 1.374491 by thread 1
+Receiving thread 1 resulting field with average = 1.374491 by thread 0
+Receiving thread 0 resulting field with average = 1.350157 by thread 1
