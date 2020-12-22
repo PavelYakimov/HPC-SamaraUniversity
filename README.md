@@ -36,3 +36,5 @@
 
 
 # Лабораторные работы
+
+[Ссылка в Google Drive на таблицу с результатами по лабораторным работам](https://docs.google.com/spreadsheets/d/1BotpkxUXMNoUfIsEyczvU3dGOJ990JHVFX8byUVs-y4/edit?usp=sharing)
