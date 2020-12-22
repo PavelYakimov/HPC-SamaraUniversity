@@ -3,7 +3,7 @@
 
 Лектор: [Якимов Павел Юрьевич](https://ssau.ru/staff/222993132-yakimov-pavel-yurevich) - доцент кафедры суперкомьютеров и общей информатики, к.т.н.
 
-При подготовки курса были использованы следующие материалы:
+При подготовке курса были использованы следующие материалы:
 - [NVIDIA CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
 - [CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
 - Материалы компании Applied Parallel Computing LLC
